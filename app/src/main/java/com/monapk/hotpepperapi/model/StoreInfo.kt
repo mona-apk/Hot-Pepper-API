@@ -64,7 +64,8 @@ data class Shop(
     val tv: String,
     val urls: Urls,
     val wedding: String,
-    val wifi: String
+    val wifi: String,
+    @Transient var distance: Double = 0.0
 )
 
 data class Budget(
